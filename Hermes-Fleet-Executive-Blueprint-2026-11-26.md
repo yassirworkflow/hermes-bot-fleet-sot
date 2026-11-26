@@ -192,3 +192,7 @@ Produce the P0 decision record in `hermes-bot-fleet-sot/` covering: (1) the 34-b
 - **MCP servers added to global config:** context7, everything, serena, agno (best-effort; verify availability).
 - **skills-manager bot created (P2):** profile `skills-manager` with MVB (profile.yaml ui_meta, SOUL with reviewed lifecycle instructions, allowlisted config, memories). Tools: asm eval, asm audit residency/overlap, skills-manager-cli. Owner approval gates documented.
 - **Registry now 37 profiles** (added skills-manager).
+
+- **Pending tasks executed (authorized):** wellness-director + wellness-frontline-agent deleted (snapshotted); SOUL alignment for 22 generic estate/specialist bots (descriptors → SOUL.md); debugger/planner/reviewer minimal SOULs; splash-7777 kept as generic helper. MEMORY.md + USER.md created for all 35 profiles (59 files). Aux slots pinned to 2.6B globally + dev-coder aux 35B→2.6B. Allowlists applied to 29 profiles previously without one. Credential consolidation: 51 shared-key lines removed from 9 profile .env (snapshot taken). Canonical Bot Chats created for 4 new bots.
+- **VERIFICATION.md** updated with post-fix re-check (T-01..T-07 mostly PASS).
+- **Remaining:** room creation (Knowledge & Office) via Desktop UI; acceptance tests T-08/T-09 (rooms, bot-to-bot); T-10 evidence finalization; credential consolidation config references (key_env) for multiplexed gateway.

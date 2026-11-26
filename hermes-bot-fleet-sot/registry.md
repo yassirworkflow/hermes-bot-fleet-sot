@@ -49,8 +49,9 @@
 | 31 | sales-marketing-director | HCREALTY | — | none | generic (to fix) | 15 | allowlist | 🟡 | keep (Sales & Mktg lead) |
 | 32 | sous-chef-pastry | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (F&B sub-bot) |
 | 33 | spa-hammam-manager | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
-| 34 | splash-7777 | AI-Infra | Y | none | generic (to fix) | 16 | default | 🟡 | keep pending |
-| 35 | wellness-director | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | excluded (snapshot taken; deletion pending confirmation) |
+| 34 | splash-7777 | AI-Infra | Y | none | generic (helper, kept) | 16 | default | 🟡 | keep pending (generic helper) |
+| 35 | wellness-director | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deleted 2026-11-26 (snapshot: hermes-snapshots/2026-11-26-wellness-predelete) |
+| 36 | wellness-frontline-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deleted 2026-11-26 (snapshot: hermes-snapshots/2026-11-26-wellness-predelete) |
 | 37 | skills-manager | AI-Infra | Y | none (inherited) | custom (new) | 12 | allowlist | 🟡 | created (P2, Skills Manager CEO) |
 
 ## Notes
