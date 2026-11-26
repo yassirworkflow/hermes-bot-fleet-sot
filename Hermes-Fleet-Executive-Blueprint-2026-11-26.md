@@ -185,4 +185,8 @@ Produce the P0 decision record in `hermes-bot-fleet-sot/` covering: (1) the 34-b
 - **P2 new bots created:** `librarian-bot` and `office-bot` with full MVB (profile.yaml with ui_meta, SOUL.md, allowlisted config.yaml with no pin, memories/MEMORY.md + USER.md). 12 bundled skills each.
 - **Registry created:** `hermes-bot-fleet-sot/registry.md` (36 profiles, dispositions).
 - **GitHub sync complete:** https://github.com/yassirworkflow/hermes-bot-fleet-sot (public, main branch). SoT folder + audits + reviews + investigation + blueprint + P1 evidence + registry pushed.
-- **Still pending (P2/P3 follow-up):** SOUL alignment for 22 generic-SOUL estate/specialist bots; aux slots pinned to 2.6B (incl. dev-coder 35B→2.6B); tool allowlists for the 31 profiles still on defaults; credential consolidation (P4); canonical Bot Chats for new bots; room creation (Knowledge & Office room to be authorized); acceptance tests T-02…T-10.
+- **Group reclassification:** reviewer/planner/debugger/dev-coder → code-dev; gm-agent/deputy-agent → HCREALTY (registry updated).
+- **researcher → tech-teacher-researcher:** profile renamed via `hermes profile rename`; MVB populated (SOUL with research/teaching capabilities + hard guardrails, allowlisted config with execute=false, memories). MCP servers context7 + everything added to global config; serena + agno added (verify on first use).
+- **librarian-bot Obsidian integration:** installed obsidian-markdown, obsidian-bases, json-canvas, obsidian-cli, kepano-defuddle skills; Obsidian Integration Protocol added to SOUL.md.
+- **wellness-director + wellness-frontline-agent:** snapshotted; marked excluded (deletion pending explicit confirmation — not deleted yet).
+- **MCP servers added to global config:** context7, everything, serena, agno (best-effort; verify availability).

@@ -21,16 +21,16 @@
 | 3 | competition-survey-manager | HCREALTY | — | none | generic (to fix) | 15 | allowlist | 🟢 | keep |
 | 4 | culinary-director | HCREALTY | Y | none | generic (to fix) | 15 | default | 🟡 | keep (F&B master pilot) |
 | 5 | culinary-frontline-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (F&B sub-bot) |
-| 6 | debugger | Specialist | — | none | generic (to fix) | 15 | default | 🔴 | keep |
-| 7 | deputy-agent | Specialist | — | none | generic (to fix) | 15 | default | 🔴 | keep |
-| 8 | dev-coder | AI-Infra | Y | none | custom | 28 | default (to be allowlisted) | 🟢 | keep |
+| 6 | debugger | code-dev | — | none | generic (to fix) | 15 | default | 🔴 | keep |
+| 7 | deputy-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep |
+| 8 | dev-coder | code-dev | Y | none | custom | 28 | default (to be allowlisted) | 🟢 | keep |
 | 9 | estate-accountant | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Strategic Board) |
 | 10 | estate-butler-supervisor | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
 | 11 | estate-engineer | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Strategic Board) |
 | 12 | estate-housekeeping-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
 | 13 | executive-housekeeper | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
 | 14 | experiences-director | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Sales & Mktg) |
-| 15 | gm-agent | Specialist | — | none | generic (to fix) | 15 | default | 🔴 | keep (Strategic Board) |
+| 15 | gm-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Strategic Board) |
 | 16 | guest-experience-manager | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Sales & Mktg) |
 | 17 | guest-services-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Sales & Mktg) |
 | 18 | hammam-master | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
@@ -41,17 +41,17 @@
 | 23 | local-ai-guardian.backup.20261103-142924 | AI-Infra | Y | none | custom | 2263 | default | 🟢 | keep pending (Non-Goal 3) |
 | 24 | office-bot | Knowledge & Office | Y | none (inherited) | custom (new) | 12 | allowlist | 🟡 | created (P2) |
 | 25 | orchestrator | AI-Infra | Y | none | custom | 25 | default (to be allowlisted) | 🟢 | keep (hub router) |
-| 26 | planner | Specialist | — | none | generic (to fix) | 15 | default | 🔴 | keep |
-| 27 | researcher | Specialist | — | none | generic (to fix) | 15 | default | 🔴 | configure (ghost → MVB) |
+| 26 | planner | code-dev | — | none | generic (to fix) | 15 | default | 🔴 | keep |
+| 27 | tech-teacher-researcher | AI-Infra | — | none | custom (new) | 12 | allowlist | 🟡 | created (P2, renamed from researcher) |
 | 28 | researcher-bot | AI-Infra | Y | none | custom | 29 | default (to be allowlisted) | 🟢 | keep |
 | 29 | restaurant-wine-lead | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (F&B sub-bot) |
-| 30 | reviewer | Specialist | — | none | generic (to fix) | 15 | default | 🔴 | keep |
+| 30 | reviewer | code-dev | — | none | generic (to fix) | 15 | default | 🔴 | keep |
 | 31 | sales-marketing-director | HCREALTY | — | none | generic (to fix) | 15 | allowlist | 🟡 | keep (Sales & Mktg lead) |
 | 32 | sous-chef-pastry | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (F&B sub-bot) |
 | 33 | spa-hammam-manager | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
 | 34 | splash-7777 | AI-Infra | Y | none | generic (to fix) | 16 | default | 🟡 | keep pending |
-| 35 | wellness-director | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Sales & Mktg) |
-| 36 | wellness-frontline-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | keep (Sales & Mktg) |
+| 35 | wellness-director | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | excluded (snapshot taken; deletion pending confirmation) |
+| 36 | wellness-frontline-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | excluded (snapshot taken; deletion pending confirmation) |
 
 ## Notes
 
