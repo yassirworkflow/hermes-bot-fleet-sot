@@ -51,7 +51,7 @@
 | 33 | spa-hammam-manager | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | deferred (later batch) |
 | 34 | splash-7777 | AI-Infra | Y | none | generic (to fix) | 16 | default | 🟡 | keep pending |
 | 35 | wellness-director | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | excluded (snapshot taken; deletion pending confirmation) |
-| 36 | wellness-frontline-agent | HCREALTY | — | none | generic (to fix) | 15 | default | 🔴 | excluded (snapshot taken; deletion pending confirmation) |
+| 37 | skills-manager | AI-Infra | Y | none (inherited) | custom (new) | 12 | allowlist | 🟡 | created (P2, Skills Manager CEO) |
 
 ## Notes
 

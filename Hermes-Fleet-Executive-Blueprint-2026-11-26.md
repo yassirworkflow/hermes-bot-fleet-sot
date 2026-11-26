@@ -190,3 +190,5 @@ Produce the P0 decision record in `hermes-bot-fleet-sot/` covering: (1) the 34-b
 - **librarian-bot Obsidian integration:** installed obsidian-markdown, obsidian-bases, json-canvas, obsidian-cli, kepano-defuddle skills; Obsidian Integration Protocol added to SOUL.md.
 - **wellness-director + wellness-frontline-agent:** snapshotted; marked excluded (deletion pending explicit confirmation — not deleted yet).
 - **MCP servers added to global config:** context7, everything, serena, agno (best-effort; verify availability).
+- **skills-manager bot created (P2):** profile `skills-manager` with MVB (profile.yaml ui_meta, SOUL with reviewed lifecycle instructions, allowlisted config, memories). Tools: asm eval, asm audit residency/overlap, skills-manager-cli. Owner approval gates documented.
+- **Registry now 37 profiles** (added skills-manager).
