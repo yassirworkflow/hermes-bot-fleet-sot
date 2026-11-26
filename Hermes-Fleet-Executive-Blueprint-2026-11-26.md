@@ -176,5 +176,13 @@ Leaf bots not listed above (culinary-frontline-agent appears in F&B; estate role
 
 Produce the P0 decision record in `hermes-bot-fleet-sot/` covering: (1) the 34-bot registry with per-bot disposition (keep/configure/retire), (2) the policy ratification (a/b/c) with date, (3) the identity-precedence ruling, (4) the topology decision (ADR-8: peer rooms vs. pilot master), and (5) Owner signature in `01-CONTEXT.md` §8. Only after that row is marked "authorized" may P1 read-only validation begin. No code, no `~/.hermes/` writes, no skill changes until then.
 
----
-*End of report. Read-only; no files under `~/.hermes/` modified.*
+## 6. Progress log (executed, read-only-safe writes authorized by user 2026-11-26)
+
+- **P0 decisions recorded** (Section 0.5): model policy ratified (selector-only, 9B local global default); topology pilot on F&B only; identity precedence pending; librarian-bot + office-bot added; maintenance bots deferred; GitHub sync done.
+- **P1 read-only validation complete:** evidence in `hermes-bot-fleet-sot/P1-VALIDATION-EVIDENCE.md`. Findings: global default on dead Splash :7777 (35B); 10 profile pins confirmed; 33 profiles running; no cron jobs in default profile; doctor clean except vendor-prefix mismatch.
+- **P3 global default changed:** `~/.hermes/config.yaml` model block → `MLX-Qwen3.5-9B-DeepSeek-V4-Flash-4bit` on `omlx` (validated 9B local). Snapshot at `hermes-snapshots/2026-11-26-pre-p3/`.
+- **P3 profile pins removed:** `model:` block removed from 10 pinned profiles (ape-bot, asset-manager, culinary-director, dev-coder, local-ai-doctor, local-ai-guardian, guardian backup, orchestrator, researcher-bot, splash-7777). They now inherit. Snapshot taken.
+- **P2 new bots created:** `librarian-bot` and `office-bot` with full MVB (profile.yaml with ui_meta, SOUL.md, allowlisted config.yaml with no pin, memories/MEMORY.md + USER.md). 12 bundled skills each.
+- **Registry created:** `hermes-bot-fleet-sot/registry.md` (36 profiles, dispositions).
+- **GitHub sync complete:** https://github.com/yassirworkflow/hermes-bot-fleet-sot (public, main branch). SoT folder + audits + reviews + investigation + blueprint + P1 evidence + registry pushed.
+- **Still pending (P2/P3 follow-up):** SOUL alignment for 22 generic-SOUL estate/specialist bots; aux slots pinned to 2.6B (incl. dev-coder 35B→2.6B); tool allowlists for the 31 profiles still on defaults; credential consolidation (P4); canonical Bot Chats for new bots; room creation (Knowledge & Office room to be authorized); acceptance tests T-02…T-10.
