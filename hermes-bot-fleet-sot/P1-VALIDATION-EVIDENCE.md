@@ -1,0 +1,509 @@
+# P1 Read-Only Validation Evidence
+
+Date: 2026-11-26T20:16:01Z
+Hermes: Hermes Agent v0.23.4 (2026.9.24) · stable · local 8fc037444731
+
+## hermes config get model --json
+{"default": "mlx-community/Qwen3.6-35B-A3B-4bit", "provider": "splash", "base_url": "http://127.0.0.1:7777/v1", "api_mode": "chat_completions", "default_headers": {"User-Agent": "hermes-agent"}, "key_env": "HERMES_PROVIDER_SPLASH_31D58043_API_KEY"}
+
+## hermes config check
+
+📋 Configuration Status
+
+  Config version: 54 ✓
+
+  Required:
+
+  Optional:
+    ○ NOUS_BASE_URL
+    ○ HERMES_ANON_API_SECRET
+    ✓ OPENROUTER_API_KEY
+    ○ GOOGLE_API_KEY
+    ○ GEMINI_API_KEY
+    ○ GEMINI_BASE_URL
+    ○ VERTEX_CREDENTIALS_PATH
+    ○ XAI_API_KEY
+    ○ XAI_BASE_URL
+    ○ NVIDIA_API_KEY
+    ○ NVIDIA_BASE_URL
+    ✓ LM_API_KEY
+    ✓ LM_BASE_URL
+    ○ GLM_API_KEY
+    ○ ZAI_API_KEY
+    ○ Z_AI_API_KEY
+    ○ GLM_BASE_URL
+    ○ KIMI_API_KEY
+    ○ KIMI_BASE_URL
+    ○ KIMI_CN_API_KEY
+    ○ STEPFUN_API_KEY
+    ○ STEPFUN_BASE_URL
+    ○ ARCEEAI_API_KEY
+    ○ ARCEE_BASE_URL
+    ○ GMI_API_KEY
+    ○ GMI_BASE_URL
+    ○ ACTUAL_API_KEY
+    ○ FIREWORKS_API_KEY
+    ○ MINIMAX_API_KEY
+    ○ MINIMAX_BASE_URL
+    ○ MINIMAX_CN_API_KEY
+    ○ MINIMAX_CN_BASE_URL
+    ○ DEEPSEEK_API_KEY
+    ○ DEEPSEEK_BASE_URL
+    ○ DASHSCOPE_API_KEY
+    ○ DASHSCOPE_BASE_URL
+    ○ HERMES_QWEN_BASE_URL
+    ✓ OPENCODE_ZEN_API_KEY
+    ○ COMMANDCODE_API_KEY
+    ○ OPENCODE_ZEN_BASE_URL
+    ○ OPENCODE_GO_API_KEY
+    ○ OPENCODE_GO_BASE_URL
+    ○ HF_TOKEN
+    ○ HF_BASE_URL
+    ✓ OLLAMA_API_KEY
+    ○ OLLAMA_BASE_URL
+    ○ XIAOMI_API_KEY
+    ○ XIAOMI_BASE_URL
+    ○ UPSTAGE_API_KEY
+    ○ UPSTAGE_BASE_URL
+    ○ AWS_REGION
+    ○ AWS_PROFILE
+    ○ AZURE_FOUNDRY_API_KEY
+    ○ AZURE_FOUNDRY_BASE_URL
+    ○ EXA_API_KEY → web_search, web_extract
+    ○ PARALLEL_API_KEY → web_search, web_extract
+    ○ FIRECRAWL_API_KEY → web_search, web_extract
+    ○ FIRECRAWL_API_URL
+    ○ FIRECRAWL_GATEWAY_URL
+    ○ TOOL_GATEWAY_URL
+    ○ CONNECTOR_GATEWAY_URL
+    ○ TOOL_GATEWAY_DOMAIN
+    ○ TOOL_GATEWAY_SCHEME
+    ○ TOOL_GATEWAY_USER_TOKEN
+    ○ TAVILY_API_KEY → web_search, web_extract
+    ○ PERPLEXITY_API_KEY → web_search, web_extract
+    ○ KEENABLE_API_KEY → web_search, web_extract
+    ○ SEARXNG_URL → web_search
+    ○ BRAVE_SEARCH_API_KEY → web_search
+    ○ BROWSERBASE_API_KEY → browser_exec
+    ○ BROWSERBASE_PROJECT_ID → browser_exec
+    ○ BROWSER_USE_API_KEY → browser_exec
+    ○ FIRECRAWL_BROWSER_TTL → browser_exec
+    ○ FAL_KEY → image_generate, video_generate
+    ○ KREA_API_KEY → image_generate
+    ○ VOICE_TOOLS_OPENAI_KEY → voice_transcription, openai_tts
+    ○ ELEVENLABS_API_KEY → elevenlabs_tts, voice_transcription
+    ○ MISTRAL_API_KEY
+    ○ PORCUPINE_ACCESS_KEY
+    ○ GITHUB_TOKEN
+    ○ NOTION_API_KEY
+    ○ LINEAR_API_KEY
+    ○ TENOR_API_KEY
+    ○ HONCHO_API_KEY → honcho_context
+    ○ HONCHO_BASE_URL
+    ○ HINDSIGHT_API_KEY → hindsight_recall
+    ○ HINDSIGHT_API_URL
+    ○ SUPERMEMORY_API_KEY → supermemory_search
+    ✓ MEM0_API_KEY
+    ○ RETAINDB_API_KEY → retaindb_search
+    ○ RETAINDB_BASE_URL
+    ○ BRV_API_KEY → brv_query
+    ○ OPENVIKING_API_KEY → viking_search
+    ○ OPENVIKING_ENDPOINT
+    ○ TELEGRAM_BOT_TOKEN
+    ✓ TELEGRAM_ALLOWED_USERS
+    ○ TELEGRAM_PROXY
+    ○ DISCORD_BOT_TOKEN
+    ○ DISCORD_ALLOWED_USERS
+    ○ DISCORD_REPLY_TO_MODE
+    ○ SLACK_BOT_TOKEN
+    ○ SLACK_APP_TOKEN
+    ○ SLACK_ALLOWED_USERS
+    ○ MATTERMOST_URL
+    ○ MATTERMOST_TOKEN
+    ○ MATTERMOST_ALLOWED_USERS
+    ○ MATTERMOST_REQUIRE_MENTION
+    ○ MATTERMOST_FREE_RESPONSE_CHANNELS
+    ○ MATRIX_HOMESERVER
+    ○ MATRIX_ACCESS_TOKEN
+    ○ MATRIX_USER_ID
+    ○ MATRIX_ALLOWED_USERS
+    ○ MATRIX_REQUIRE_MENTION
+    ○ MATRIX_FREE_RESPONSE_ROOMS
+    ○ MATRIX_AUTO_THREAD
+    ○ MATRIX_DM_AUTO_THREAD
+    ○ MATRIX_DEVICE_ID
+    ○ MATRIX_RECOVERY_KEY
+    ○ BLUEBUBBLES_SERVER_URL
+    ○ BLUEBUBBLES_PASSWORD
+    ○ BLUEBUBBLES_ALLOWED_USERS
+    ○ BLUEBUBBLES_ALLOW_ALL_USERS
+    ○ QQ_APP_ID
+    ○ QQ_CLIENT_SECRET
+    ○ QQ_ALLOWED_USERS
+    ○ QQ_GROUP_ALLOWED_USERS
+    ○ QQ_ALLOW_ALL_USERS
+    ○ QQBOT_HOME_CHANNEL
+    ○ QQBOT_HOME_CHANNEL_NAME
+    ○ QQ_SANDBOX
+    ○ IRC_SERVER
+    ○ IRC_CHANNEL
+    ○ IRC_NICKNAME
+    ○ IRC_SERVER_PASSWORD
+    ○ IRC_NICKSERV_PASSWORD
+    ○ GATEWAY_ALLOW_ALL_USERS
+    ○ API_SERVER_ENABLED
+    ✓ API_SERVER_KEY
+    ○ API_SERVER_PORT
+    ○ API_SERVER_HOST
+    ○ API_SERVER_MODEL_NAME
+    ○ GATEWAY_PROXY_URL
+    ○ GATEWAY_PROXY_KEY
+    ○ WEBHOOK_ENABLED
+    ○ WEBHOOK_PORT
+    ○ WEBHOOK_SECRET
+    ○ SUDO_PASSWORD
+    ○ HERMES_PREFILL_MESSAGES_FILE
+    ○ HERMES_EPHEMERAL_SYSTEM_PROMPT
+    ○ DINGTALK_CLIENT_ID
+    ○ DINGTALK_CLIENT_SECRET
+    ○ DINGTALK_WEBHOOK_URL
+    ○ DINGTALK_ALLOWED_USERS
+    ○ DINGTALK_HOME_CHANNEL
+    ○ DINGTALK_HOME_CHANNEL_NAME
+    ○ DISCORD_ALLOW_ALL_USERS
+    ○ DISCORD_HOME_CHANNEL
+    ○ DISCORD_HOME_CHANNEL_NAME
+    ○ WHATSAPP_CLOUD_PHONE_NUMBER_ID
+    ○ WHATSAPP_CLOUD_ACCESS_TOKEN
+    ○ WHATSAPP_CLOUD_APP_SECRET
+    ○ WHATSAPP_CLOUD_VERIFY_TOKEN
+    ○ WHATSAPP_CLOUD_APP_ID
+    ○ WHATSAPP_CLOUD_WABA_ID
+    ○ WHATSAPP_CLOUD_WEBHOOK_HOST
+    ○ WHATSAPP_CLOUD_WEBHOOK_PORT
+    ○ WHATSAPP_CLOUD_WEBHOOK_PATH
+    ○ WHATSAPP_CLOUD_API_VERSION
+    ○ WHATSAPP_CLOUD_ALLOWED_USERS
+    ○ WHATSAPP_CLOUD_ALLOW_ALL_USERS
+    ○ WHATSAPP_CLOUD_DM_POLICY
+    ○ WHATSAPP_CLOUD_HOME_CHANNEL
+    ○ GOOGLE_CHAT_SERVICE_ACCOUNT_JSON
+    ○ GOOGLE_CHAT_HTTP_EVENTS_URL
+    ○ GOOGLE_CHAT_HTTP_EVENTS_AUDIENCE
+    ○ GOOGLE_CHAT_HTTP_EVENTS_SERVICE_ACCOUNT_EMAIL
+    ○ GOOGLE_CHAT_PROJECT_ID
+    ○ GOOGLE_CHAT_SUBSCRIPTION_NAME
+    ○ GOOGLE_CHAT_ALLOWED_USERS
+    ○ GOOGLE_CHAT_HOME_CHANNEL
+    ○ TWILIO_ACCOUNT_SID
+    ○ TWILIO_AUTH_TOKEN
+    ○ TWILIO_PHONE_NUMBER
+    ○ SMS_ALLOWED_USERS
+    ○ SMS_HOME_CHANNEL
+    ○ FEISHU_APP_ID
+    ○ FEISHU_APP_SECRET
+    ○ FEISHU_DOMAIN
+    ○ FEISHU_ALLOWED_USERS
+    ○ FEISHU_ALLOW_ALL_USERS
+    ○ FEISHU_HOME_CHANNEL
+    ○ FEISHU_HOME_CHANNEL_NAME
+    ○ A2A_PEER_TOKENS
+    ○ A2A_BEARER_TOKEN
+    ○ A2A_PUSH_SECRET
+    ○ A2A_HOST
+    ○ A2A_PORT
+    ○ A2A_AGENT_NAME
+    ○ A2A_ALLOW_ALL_USERS
+    ○ A2A_HOME_CHANNEL
+    ○ WECOM_BOT_ID
+    ○ WECOM_SECRET
+    ○ WECOM_WEBSOCKET_URL
+    ○ WECOM_HOME_CHANNEL
+    ○ WECOM_ALLOWED_USERS
+    ○ WECOM_CALLBACK_CORP_ID
+    ○ WECOM_CALLBACK_CORP_SECRET
+    ○ WECOM_CALLBACK_AGENT_ID
+    ○ WECOM_CALLBACK_TOKEN
+    ○ WECOM_CALLBACK_ENCODING_AES_KEY
+    ○ IRC_PORT
+    ○ IRC_USE_TLS
+    ○ IRC_ALLOWED_USERS
+    ○ IRC_ALLOW_ALL_USERS
+    ○ IRC_HOME_CHANNEL
+    ○ NTFY_TOPIC
+    ○ NTFY_SERVER_URL
+    ○ NTFY_TOKEN
+    ○ NTFY_PUBLISH_TOPIC
+    ○ NTFY_MARKDOWN
+    ○ NTFY_ALLOWED_USERS
+    ○ NTFY_ALLOW_ALL_USERS
+    ○ NTFY_HOME_CHANNEL
+    ○ NTFY_HOME_CHANNEL_NAME
+    ○ BLUEBUBBLES_HOME_CHANNEL
+    ○ BLUEBUBBLES_HOME_CHANNEL_NAME
+    ○ BLUEBUBBLES_WEBHOOK_HOST
+    ○ BLUEBUBBLES_WEBHOOK_PORT
+    ○ BLUEBUBBLES_WEBHOOK_PATH
+    ○ BLUEBUBBLES_SEND_READ_RECEIPTS
+    ○ BLUEBUBBLES_REQUIRE_MENTION
+    ○ BLUEBUBBLES_MENTION_PATTERNS
+    ○ WEIXIN_ACCOUNT_ID
+    ○ WEIXIN_TOKEN
+    ○ WEIXIN_BASE_URL
+    ○ WEIXIN_CDN_BASE_URL
+    ○ WEIXIN_DM_POLICY
+    ○ WEIXIN_GROUP_POLICY
+    ○ WEIXIN_ALLOWED_USERS
+    ○ WEIXIN_GROUP_ALLOWED_USERS
+    ○ WEIXIN_ALLOW_ALL_USERS
+    ○ WEIXIN_HOME_CHANNEL
+    ○ WEIXIN_HOME_CHANNEL_NAME
+    ○ WEIXIN_SPLIT_MULTILINE_MESSAGES
+    ○ SIMPLEX_WS_URL
+    ○ SIMPLEX_ALLOWED_USERS
+    ○ SIMPLEX_ALLOW_ALL_USERS
+    ○ SIMPLEX_AUTO_ACCEPT
+    ○ SIMPLEX_GROUP_ALLOWED
+    ○ SIMPLEX_HOME_CHANNEL
+    ○ SIMPLEX_HOME_CHANNEL_NAME
+    ○ HERMES_SIMPLEX_TEXT_BATCH_DELAY
+    ○ LINE_CHANNEL_ACCESS_TOKEN
+    ○ LINE_CHANNEL_SECRET
+    ○ LINE_PORT
+    ○ LINE_HOST
+    ○ LINE_PUBLIC_URL
+    ○ LINE_ALLOWED_USERS
+    ○ LINE_ALLOWED_GROUPS
+    ○ LINE_ALLOWED_ROOMS
+    ○ LINE_ALLOW_ALL_USERS
+    ○ LINE_HOME_CHANNEL
+    ○ LINE_SLOW_RESPONSE_THRESHOLD
+    ○ QQBOT_HOME_CHANNEL_THREAD_ID
+    ○ QQ_MARKDOWN_SUPPORT
+    ○ QQ_PORTAL_HOST
+    ○ QQ_STT_API_KEY
+    ○ QQ_STT_BASE_URL
+    ○ QQ_STT_MODEL
+    ○ TELEGRAM_ALLOW_ALL_USERS
+    ✓ TELEGRAM_HOME_CHANNEL
+    ○ TELEGRAM_HOME_CHANNEL_NAME
+    ○ TELEGRAM_WEBHOOK_SECRET
+    ○ RAFT_PROFILE
+    ○ TEAMS_CLIENT_ID
+    ○ TEAMS_CLIENT_SECRET
+    ○ TEAMS_TENANT_ID
+    ○ TEAMS_PORT
+    ○ TEAMS_HOST
+    ○ TEAMS_ALLOWED_USERS
+    ○ TEAMS_ALLOW_ALL_USERS
+    ○ TEAMS_REQUIRE_MENTION
+    ○ TEAMS_HOME_CHANNEL
+    ○ TEAMS_HOME_CHANNEL_NAME
+    ○ TEAMS_INCOMING_WEBHOOK_URL
+    ○ TEAMS_GRAPH_ACCESS_TOKEN
+    ○ SLACK_ALLOW_ALL_USERS
+    ○ SLACK_HOME_CHANNEL
+    ○ SLACK_HOME_CHANNEL_NAME
+    ○ SLACK_THREAD_REQUIRE_MENTION
+    ○ MATTERMOST_ALLOW_ALL_USERS
+    ○ MATTERMOST_HOME_CHANNEL
+    ○ MATTERMOST_REPLY_MODE
+    ○ MATTERMOST_ALLOWED_CHANNELS
+    ○ PHOTON_PROJECT_ID
+    ○ PHOTON_PROJECT_SECRET
+    ○ PHOTON_SIDECAR_PORT
+    ○ PHOTON_SIDECAR_TOKEN
+    ○ PHOTON_SIDECAR_AUTOSTART
+    ○ PHOTON_NODE_BIN
+    ○ PHOTON_DASHBOARD_HOST
+    ○ PHOTON_SPECTRUM_HOST
+    ○ PHOTON_ALLOWED_USERS
+    ○ PHOTON_ALLOW_ALL_USERS
+    ○ PHOTON_READ_RECEIPTS
+    ○ PHOTON_REQUIRE_MENTION
+    ○ PHOTON_MENTION_PATTERNS
+    ○ PHOTON_HOME_CHANNEL
+    ○ PHOTON_HOME_CHANNEL_NAME
+    ○ PHOTON_TELEMETRY
+    ○ PHOTON_MARKDOWN
+    ○ PHOTON_REACTIONS
+    ✓ BUZZ_RELAY_URL
+    ✓ BUZZ_PRIVATE_KEY
+    ○ BUZZ_TRANSPORT
+    ○ BUZZ_AUTH_TAG
+    ○ BUZZ_CHANNELS
+    ✓ BUZZ_HOME_CHANNEL
+    ○ BUZZ_ALLOWED_USERS
+    ✓ BUZZ_ALLOW_ALL_USERS
+    ○ BUZZ_POLL_INTERVAL
+    ○ BUZZ_CLI_PATH
+    ○ BUZZ_CREDENTIALS_FILE
+    ○ BUZZ_REPLY_IN_THREAD
+    ○ MATRIX_PASSWORD
+    ○ MATRIX_ALLOW_ALL_USERS
+    ○ MATRIX_HOME_CHANNEL
+    ○ MATRIX_HOME_CHANNEL_NAME
+    ○ SIGNAL_HTTP_URL
+    ○ SIGNAL_ACCOUNT
+    ○ SIGNAL_ALLOWED_USERS
+    ○ SIGNAL_ALLOW_ALL_USERS
+    ○ SIGNAL_GROUP_ALLOWED_USERS
+    ○ SIGNAL_REQUIRE_MENTION
+    ○ SIGNAL_IGNORE_STORIES
+    ○ SIGNAL_HOME_CHANNEL
+    ○ SIGNAL_HOME_CHANNEL_NAME
+    ○ EMAIL_ADDRESS
+    ○ EMAIL_PASSWORD
+    ○ EMAIL_SMTP_HOST
+    ○ EMAIL_SMTP_PORT
+    ○ EMAIL_IMAP_HOST
+    ○ EMAIL_ALLOWED_USERS
+    ○ EMAIL_HOME_ADDRESS
+    ○ EMAIL_AUTHSERV_ID
+    ○ WHATSAPP_ENABLED
+    ○ WHATSAPP_ALLOWED_USERS
+    ○ WHATSAPP_ALLOW_ALL_USERS
+    ○ WHATSAPP_HOME_CHANNEL
+    ○ WHATSAPP_HOME_CHANNEL_NAME
+    ○ HASS_TOKEN
+    ○ HASS_URL
+    ○ HASS_HOME_CHANNEL
+    ○ AI_GATEWAY_API_KEY
+    ○ DASHSCOPE_CN_BASE_URL
+    ○ ALIBABA_TOKEN_PLAN_API_KEY
+    ○ ALIBABA_TOKEN_PLAN_BASE_URL
+    ○ ALIBABA_TOKEN_PLAN_CN_API_KEY
+    ○ ALIBABA_TOKEN_PLAN_CN_BASE_URL
+    ○ ALIBABA_CODING_PLAN_API_KEY
+    ○ ALIBABA_CODING_PLAN_BASE_URL
+    ○ ALIBABA_CODING_PLAN_CN_API_KEY
+    ○ ALIBABA_CODING_PLAN_CN_BASE_URL
+    ○ ANTHROPIC_API_KEY
+    ○ ANTHROPIC_TOKEN
+    ○ CLAUDE_CODE_OAUTH_TOKEN
+    ○ COMMANDCODE_BASE_URL
+    ○ COMMANDCODE_ANTHROPIC_BASE_URL
+    ○ DEEPINFRA_API_KEY
+    ○ DEEPINFRA_BASE_URL
+    ○ KILOCODE_API_KEY
+    ○ KIMI_CODING_API_KEY
+    ○ MODEL_API_KEY
+    ○ META_API_KEY
+    ○ META_MODEL_API_KEY
+    ○ META_BASE_URL
+    ○ NEBIUS_API_KEY
+    ○ NEBIUS_TOKEN_FACTORY_API_KEY
+    ○ NEBIUS_BASE_URL
+    ○ NOVITA_API_KEY
+    ○ NOVITA_BASE_URL
+    ○ RAMP_ROUTER_API_KEY
+    ○ ROUTER_API_KEY
+    ○ RAMP_ROUTER_BASE_URL
+    ○ TOKENHUB_API_KEY
+    ○ TOKENHUB_BASE_URL
+
+  Saved configuration:
+    ⚠ platform 'cli' references unknown toolset 'omh' — did you mean 'hermes-cli'?
+
+exit: 0
+
+## hermes profile list
+
+ Profile          Model                        Gateway      Alias        Distribution
+ ───────────────    ───────────────────────────    ───────────    ───────────    ────────────────────
+ ◆default         mlx-community/Qwen3.6-35B-   running      —            —
+  ape-bot         MLX-Qwen3.5-9B-DeepSeek-V4   running      —            —
+  asset-manager   nvidia/nemotron-3-ultra-55   running      —            —
+  competition-survey-manager —                            running      —            —
+  culinary-director qwen3.6-plus-free            running      —            —
+  culinary-frontline-agent —                            running      —            —
+  debugger        —                            running      —            —
+  deputy-agent    —                            running      —            —
+  dev-coder       Qwen2.5-Coder-7B-Instruct-   running      dev-coder    —
+  estate-accountant —                            running      —            —
+  estate-butler-supervisor —                            running      —            —
+  estate-engineer —                            running      —            —
+  estate-housekeeping-agent —                            running      —            —
+  executive-housekeeper —                            running      —            —
+  experiences-director —                            running      —            —
+  gm-agent        —                            running      —            —
+  guest-experience-manager —                            running      —            —
+  guest-services-agent —                            running      —            —
+  hammam-master   —                            running      —            —
+  lead-spa-receptionist —                            running      —            —
+  local-ai-doctor MLX-Qwen3.5-9B-DeepSeek-V4   running      —            —
+  local-ai-guardian MLX-Qwen3.5-9B-DeepSeek-V4   running      local-ai-guardian —
+  orchestrator    nvidia/nemotron-3-ultra-55   running      —            —
+  planner         —                            running      —            —
+  researcher      —                            running      —            —
+  researcher-bot  nvidia/nemotron-3-ultra-55   running      —            —
+  restaurant-wine-lead —                            running      —            —
+  reviewer        —                            running      —            —
+  sales-marketing-director —                            running      —            —
+  sous-chef-pastry —                            running      —            —
+  spa-hammam-manager —                            running      —            —
+  splash-7777     mlx-community--Qwen3.6-35B   running      —            —
+  wellness-director —                            running      —            —
+  wellness-frontline-agent —                            running      —            —
+
+⚠ Profile 'local-ai-doctor' shares its buzz credential with default: the bot can only belong to one profile. Give 'local-ai-doctor' its own bot (hermes -p local-ai-doctor setup, or the dashboard Messaging page) or remove the token from 'local-ai-doctor'; a multiplexed gateway parks the duplicate and `hermes gateway migrate --multiplex` refuses until it is gone.
+⚠ Profile 'orchestrator' shares its buzz credential with default: the bot can only belong to one profile. Give 'orchestrator' its own bot (hermes -p orchestrator setup, or the dashboard Messaging page) or remove the token from 'orchestrator'; a multiplexed gateway parks the duplicate and `hermes gateway migrate --multiplex` refuses until it is gone.
+
+
+## hermes cron list
+No scheduled jobs in profile 'default'.
+Create one with 'hermes cron create ...' or the /cron command in chat.
+
+## profile-level model pins (grep '^model:')
+/Users/user/.hermes/profiles/ape-bot/config.yaml:model:
+/Users/user/.hermes/profiles/asset-manager/config.yaml:model:
+/Users/user/.hermes/profiles/culinary-director/config.yaml:model:
+/Users/user/.hermes/profiles/dev-coder/config.yaml:model:
+/Users/user/.hermes/profiles/local-ai-doctor/config.yaml:model:
+/Users/user/.hermes/profiles/local-ai-guardian.backup.20261103-142924/config.yaml:model:
+/Users/user/.hermes/profiles/local-ai-guardian/config.yaml:model:
+/Users/user/.hermes/profiles/orchestrator/config.yaml:model:
+/Users/user/.hermes/profiles/researcher-bot/config.yaml:model:
+/Users/user/.hermes/profiles/splash-7777/config.yaml:model:
+
+## doctor
+
+┌─────────────────────────────────────────────────────────┐
+│                 🩺 Hermes Doctor                        │
+└─────────────────────────────────────────────────────────┘
+
+◆ Security Advisories
+  ✓ No active security advisories
+
+◆ MCP Server Security
+  ✓ No suspicious MCP stdio commands
+
+◆ Python Environment
+  ✓ Python 3.14.9
+  ✓ SQLite 3.53.1
+    → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
+    → state.db: WAL journal mode (308.1 MB)
+    → cron/executions.db: WAL journal mode (32.0 KB)
+    → projects.db: WAL journal mode (44.0 KB)
+    → response_store.db: WAL journal mode (56.0 KB)
+    → verification_evidence.db: WAL journal mode (32.0 KB)
+    → kanban.db: WAL journal mode (112.0 KB)
+  ✓ Runtime venv staged (/Users/user/.hermes/installs/eca4b2eb3f582470/environments/fa5dd192dc2f47968182d50335aac0f5/venv) (active in this process)
+  ✓ macOS TCC anchor active (/Users/user/.hermes/hermes-agent/venv/bin/python)
+  ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
+    → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
+
+◆ SSL / CA Certificates
+  ✓ TLS platform trust store configured; default SSL context available
+
+◆ Required Packages
+  ✓ OpenAI SDK
+  ✓ Rich (terminal UI)
+  ✓ python-dotenv
+  ✓ ruamel.yaml
+  ✓ HTTPX
+  ✓ Croniter (cron expressions) (optional)
+  ✓ python-telegram-bot (optional)
+  ⚠ discord.py (optional, not installed)
+  ✓ Dashboard web surface (imports cleanly)
+
