@@ -69,3 +69,8 @@ model:
 - T-07: 0 shared-key leaks in profile .env (51 lines removed).
 - T-02: 1 generic SOUL remaining (splash-7777, marked generic helper — allowed exception).
 - Wellness profiles deleted; snapshots at hermes-snapshots/2026-11-26-wellness-predelete/.
+
+## T-08 / T-09 / T-10 (manual Desktop steps)
+- T-08 (rooms): 4 base rooms (HCREALTY F&B, Sales & Marketing, Strategic Board, CODE/DEV) defined in architecture; Knowledge & Office room pending creation via Desktop UI (office-bot created via Desktop UI 2026-11-27). Membership lists per registry. Verification requires Desktop interaction.
+- T-09 (bot-to-bot): canonical Bot Chats created for all new bots (librarian-bot, office-bot, tech-teacher-researcher, skills-manager). message_agent gate requires ≥1 profile with ui_meta.hermes-bots (orchestrator satisfies). Full handoff test requires Desktop session.
+- T-10 (evidence & rollback): dated snapshots exist (pre-p3, pre-rename, wellness-predelete, pre-env-consolidation); VERIFICATION.md present; rollback manifests recorded.
